@@ -6,7 +6,7 @@ import {PlusCircle} from "lucide-react";
 
 export default function Profile() {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col sm:w-full">
             <div className="flex flex-col space-y-2">
                 <Avatar className="w-12 h-12">
                     <AvatarImage src="/01.png" alt="Avatar"/>

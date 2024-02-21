@@ -12,7 +12,7 @@ import ProfileActions from "@/components/profile-actions";
 export default function Sidebar() {
 
     return (
-        <div className="flex w-full md:w-4/12 lg:w-3/12 xl:w-2/12  border-r h-dvh">
+
 
             <div className="space-y-2 w-full">
                 <div className="flex justify-between mb-4">
@@ -22,7 +22,7 @@ export default function Sidebar() {
                                 <Menu className="h-4 w-4"/>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="left" className="flex w-full md:w-4/12 lg:w-3/12 xl:w-2/12  border-r h-dvh">
+                        <SheetContent side="left" className="flex w-full md:w-4/12 lg:w-3/12 xl:w-2/12 border-r h-dvh">
                             <SheetHeader>
                                 <Profile/>
                                 <ProfileActions/>
@@ -49,6 +49,6 @@ export default function Sidebar() {
                     </Link>
                 ))}
             </div>
-        </div>
+
     )
 }
