@@ -1,13 +1,14 @@
+"use client"
 import {FC} from 'react';
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
-import {Button} from "@/components/ui/button";
-import {Label} from "@/components/ui/label";
-import {Input} from "@/components/ui/input";
-import {PasswordInput} from "@/components/ui/password-input";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
-import {Separator} from "@/components/ui/separator";
+import LoginForm from "@/components/login-form";
+import SignUpForm from "@/components/sign-up-form";
 
-const Page:FC = () => {
+
+const Page: FC = () => {
+
+
     return (
         <div className="flex items-center justify-center h-lvh">
             <Tabs defaultValue="account" className="w-[400px]">
@@ -24,18 +25,8 @@ const Page:FC = () => {
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-2">
-                            <div className="space-y-1">
-                                <Label htmlFor="email">Email</Label>
-                                <Input id="email" placeholder="example@email.com" />
-                            </div>
-                            <div className="space-y-1">
-                                <Label htmlFor="password">Password</Label>
-                                <Input type="password" id="password" placeholder="password" />
-                            </div>
+                            <LoginForm/>
                         </CardContent>
-                        <CardFooter className="flex flex-col">
-                            <Button className="flex w-full">Login</Button>
-                        </CardFooter>
                     </Card>
                 </TabsContent>
                 <TabsContent value="signup">
@@ -47,22 +38,9 @@ const Page:FC = () => {
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-2">
-                            <div className="space-y-1">
-                                <Label htmlFor="fullName">Enter Your Name</Label>
-                                <Input id="fullName"/>
-                            </div>
-                            <div className="space-y-1">
-                                <Label htmlFor="email">Email</Label>
-                                <Input id="email" placeholder="example@email.com" />
-                            </div>
-                            <div className="space-y-1">
-                                <Label htmlFor="password">Password</Label>
-                                <Input type="password" id="password" placeholder="password" />
-                            </div>
+                            <SignUpForm/>
                         </CardContent>
-                        <CardFooter className="flex-col flex">
-                            <Button className="flex w-full">Sign Up</Button>
-                        </CardFooter>
+
                     </Card>
                 </TabsContent>
             </Tabs>

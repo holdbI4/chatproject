@@ -4,11 +4,12 @@ import {Label} from "@/components/ui/label";
 import {Switch} from "@/components/ui/switch";
 import {Separator} from "@/components/ui/separator";
 import {useTheme} from "next-themes";
-
+import Link from "next/link";
 
 export default function ProfileActions() {
     const [checked, setChecked] = useState(true)
     const {theme, setTheme} = useTheme()
+
     return (
         <div>
             <div className="flex w-full justify-between p-3 rounded-xl hover:bg-muted transition-al">
@@ -21,11 +22,14 @@ export default function ProfileActions() {
             </div>
             <Separator/>
 
+            <Link href="/settings">
             <div className="flex w-full space-x-1 items-center p-3 rounded-xl hover:bg-muted transition-all">
-                <Settings className="w-5 h-5"/>
-                <Label htmlFor="settings">Settings</Label>
-            </div>
 
+                    <Settings className="w-5 h-5"/>
+                    <Label htmlFor="settings">Settings</Label>
+
+            </div>
+            </Link>
 
             <div className="flex w-full space-x-1 items-center p-3 rounded-xl hover:bg-muted transition-all">
                 <Users className="w-5 h-5"/>

@@ -8,7 +8,8 @@ import {useParams} from "next/navigation";
 import {
     Dialog,
     DialogContent,
-    DialogDescription, DialogFooter,
+    DialogDescription,
+    DialogFooter,
     DialogHeader,
     DialogTitle,
     DialogTrigger
@@ -58,7 +59,7 @@ export default function ChatHeader() {
                                 </Avatar>
                                 <div className="flex flex-col h-full">
                                     <div className="flex text-lg font-bold">
-                                        Azamjonov⚦
+                                        Azamjonov
                                     </div>
                                     <div className="flex">
                                         Last Seen recently

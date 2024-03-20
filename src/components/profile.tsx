@@ -17,7 +17,7 @@ export default function Profile() {
                 <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
                         <AccordionTrigger>
-                            <p className="text-sm text-muted-foreground">proudtobegay@email.com</p>
+                            <p className="text-sm text-muted-foreground">abduxalilov@email.com</p>
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col">
                             <div
